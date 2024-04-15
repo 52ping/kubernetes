@@ -12,9 +12,12 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-ARG BASE
-FROM ${BASE}
-ARG ARCH
-ADD bin/pause-linux-${ARCH} /pause
-USER 65535:65535
-ENTRYPOINT ["/pause"]
+#ARG BASE
+#FROM ${BASE}
+#ARG ARCH
+#ADD bin/pause-linux-${ARCH} /pause
+#USER 65535:65535
+#ENTRYPOINT ["/pause"]
+
+FROM k8s.gcr.io/pause-amd64:3.6
+MAINTAINER zhongxiaoping
