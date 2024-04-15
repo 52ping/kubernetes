@@ -19,5 +19,5 @@
 #USER 65535:65535
 #ENTRYPOINT ["/pause"]
 
-FROM gcr.io/google-containers/pause-amd64:3.6
+FROM k8s.gcr.io_pause:3.6
 MAINTAINER zhongxiaoping
