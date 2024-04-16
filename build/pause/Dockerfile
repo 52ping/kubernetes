@@ -19,5 +19,5 @@
 #USER 65535:65535
 #ENTRYPOINT ["/pause"]
 
-FROM registry.k8s.io/pause:3.6
+FROM registry.k8s.io/pause:3.7
 MAINTAINER zhongxiaoping
